@@ -1,0 +1,4 @@
+AuthName "Contenido restringido para usuarios registrados"
+AuthType Basic
+AuthUserFile /etc/apache2/users
+require valid-user
