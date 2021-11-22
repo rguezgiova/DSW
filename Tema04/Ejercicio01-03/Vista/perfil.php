@@ -11,7 +11,8 @@
     <?php
         if (isset($_SESSION['usuario'])) {
             require_once("../Modelo/funcionesBD.php");
-
+            $datosUsuario = consulta($_SESSION['usuario']);
+            print_r($datosUsuario);
         }
     ?>
 </body>
