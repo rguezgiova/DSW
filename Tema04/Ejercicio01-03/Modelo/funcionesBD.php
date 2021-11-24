@@ -1,5 +1,5 @@
 <?php
-    require_once ("../config.php");
+    require_once ("config.php");
     /**
      * Funcion que recoge la BD
      * @return string con los datos de la BD
