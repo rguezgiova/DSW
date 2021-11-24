@@ -1,23 +1,19 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de registro</title>
-    <style>
-        label {
-            display: inline-block;
-            width: 100px;
+    <script>
+        function verifyPasswords() {
+            if (document.getElementById('contrasenia').value == document.getElementById('contrasenia2').value) {
+                return true;
+            } else {
+                alert("Las contraseñas no coinciden");
+                return false;
+            }
         }
-    </style>
+    </script>
 </head>
 <body>
     <?php
-        if (isset($_SESSION['usuario'])) {
+        if (isset($_SESSION['usuario']) && $_SESSION['usuario'] == 'admin') {
     ?>
-    <form action="alta.php" method="post" enctype="multipart/form-data">
+    <form action="alta.php" method="post" enctype="multipart/form-data" onsubmit="return verifyPasswords();">
         <h1>Formulario de registro</h1>
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre"><br>
@@ -28,7 +24,9 @@
         <label for="usuario">Usuario:</label>
         <input type="text" name="usuario"><br>
         <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contraseña"><br>
+        <input type="password" name="contrasenia"><br>
+        <label for="contrasenia2">Verificar contraseña:</label>
+        <input type="password" name="contrasenia2"><br>
         <label for="email">Email:</label>
         <input type="email" name="email"><br>
         <button type="submit">Enviar</button>
