@@ -1,5 +1,5 @@
 <?php 
-    /*
+    /**
      * Funcion que suma de dos matrices bidimensionales a la que se le pasa dos parametros
      */
     function sumaMatrices($a, $b) {
@@ -14,7 +14,7 @@
         }
         return $r;
     }
-    /*
+    /**
      * Funcion que genera una tabla donde $a es una matriz bidimensional
      */
     function imprimirMatriz($a) {
@@ -29,7 +29,7 @@
         echo "</table>";
     }
     
-    /*
+    /**
      * Funcion que imprime un formulario donde se le pasa el nombre y las filas y columnas
      */
     function imprimirFormulario($nombre, $filas, $cols) {
@@ -45,7 +45,7 @@
         echo "</table>";
     }
 
-    /*
+    /**
      * Funcion que muestra las imagenes de los numeros y les disminuye el tamanio
      */
     function _mostrarImgNum($num, $width= 0.25) {
@@ -63,7 +63,7 @@
         }
     }
 
-    /*
+    /**
      * Funcion que muestra las imagenes de las cartas de la baraja espaniola
      */
     function mostrarImgCarta($carta, $palo) {
@@ -73,7 +73,7 @@
         echo "<img src= '$urlFile' width='100px'/>";
     }
 
-    /*
+    /**
     * Funcion que obtiene la fecha y hora actual 
     */
     function obtenerFechaHora($claves, $fecha = null) {
@@ -95,14 +95,14 @@
                 </table>";
     }
 
-    /*
+    /**
     * Funcion que muestra la hora actual 
     */
     function mostrarHoraActual($fecha = null) {
         obtenerFechaHora(["hours", "minutes", "seconds"]);
     }
 
-    /*
+    /**
     * Funcion que muestra la fecha actual 
     */
     function mostrarFechaActual($fecha = null) {
