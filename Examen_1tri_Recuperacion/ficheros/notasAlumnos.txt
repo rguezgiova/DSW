@@ -1,0 +1,10 @@
+Luis Fernández Pérez;7.5
+Antonia Martínez López;8.25
+Antonio Martínez López;6.3
+Luisa Martínez López;4.2
+Felipe Martínez López;10
+Manuel Martínez López;1.25
+María Martínez López;2.3
+Pedro Martínez López;3.35
+Manuela Martínez López;4.15
+Lorenzo Martínez López;5.75
