@@ -41,7 +41,7 @@ require_once("Producto.php");
             $sql = "UPDATE producto SET ";
             $atributos = $producto->getAtributos();
             foreach ($atributos as $clave => $valor) {
-                $sql += "$clave='$valor',";
+                $sql .= "$clave='$valor',";
             }
             $sql = substr($sql, 0, strlen($sql) - 1);
             $sql .= "WHERE codigo='".$producto->codigo."'";
